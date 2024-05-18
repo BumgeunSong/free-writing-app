@@ -1,14 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TextField from '@mui/material/TextField';
+import { RecoilRoot } from 'recoil';
+import FreeWritingTextField from './FreeWritingTextField';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>Free-writing App</h1>
-      <TextField></TextField>
-    </div>
+    <RecoilRoot>
+      <div className="App">
+        <h1>Free-writing App</h1>
+        <FreeWritingTextField />
+      </div>
+    </RecoilRoot>
   );
 }
 
