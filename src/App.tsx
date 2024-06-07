@@ -9,6 +9,7 @@ function App() {
   return (
     <RecoilRoot>
       <div className="App">
+        <NavigationBar />
         <h1>Free-writing App</h1>
         <TodayCard />
       </div>
