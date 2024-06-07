@@ -1,14 +1,22 @@
 import CurrentDate from "./CurrentDate";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import Duration from "./Duration";
 
 function TodayCard() {
     return (
-        <Container>
-        <Row>
-            <Col>
-                <CurrentDate />
-            </Col>
-        </Row>
+        <Card className="text-center" border="success">
+            <Card.Body>
+                <Card.Title>
+                    <CurrentDate />
+                </Card.Title>
+                <Card.Text>
+                    <Duration />
+                </Card.Text>
+                <Button variant="primary">시작하기</Button>
+            </Card.Body>
+        </Card>
+    )
+}
         {/* 
         // 오늘 시작 전
         // - 목표 글쓰기 시간
@@ -18,8 +26,5 @@ function TodayCard() {
         // - 아이콘
         // - 완료 텍스트
          */}
-    </Container>
-    )
-}
-
+        
 export default TodayCard
