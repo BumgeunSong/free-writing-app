@@ -16,5 +16,5 @@ function getFormattedDate(): string {
     const day = today.getDate()
     const paddedDay = String(day).padStart(2, '0')
 
-    return `${year}. ${paddedMonth}. ${day}`
+    return `${year}. ${paddedMonth}. ${paddedDay}`
 }
