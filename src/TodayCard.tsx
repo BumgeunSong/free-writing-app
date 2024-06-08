@@ -2,6 +2,7 @@ import CurrentDate from "./CurrentDate";
 import { Button, Card, Col, Container } from "react-bootstrap";
 import Duration from "./Duration";
 import { Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function TodayCard() {
     const isTodayWritingDone = false
@@ -29,7 +30,11 @@ function TodayCard() {
                                         <Card.Text>
                                             <Duration />
                                         </Card.Text>
-                                        <Button variant="primary">시작하기</Button>
+                                        <Link to={`write`}>
+                                            <Button variant="primary">
+                                                시작하기
+                                            </Button>
+                                        </Link>
                                     </>
                                 )
                             }
