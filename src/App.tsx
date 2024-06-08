@@ -4,6 +4,7 @@ import TodayCard from './TodayCard';
 import NavigationBar from './NavigationBar';
 import { Row, Col, Container } from 'react-bootstrap';
 import Editor from './Editor';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             </Col>
           </Row>
         </Container>
-        <Editor />
+        <Outlet />
       </div>
     </RecoilRoot>
   );
