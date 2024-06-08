@@ -20,7 +20,7 @@ function Editor() {
     const [text, setText] = useState("")
     return (
         <Container>
-            <Row className="px-2">
+            <Row className="px-2 pt-4">
                 <Col>
                     <EditorTitle>
                         <CurrentDate />
