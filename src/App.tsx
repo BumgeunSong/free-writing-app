@@ -1,7 +1,5 @@
 import './App.css';
 import { RecoilRoot } from 'recoil';
-import FreeWritingTextField from './FreeWritingTextField';
-import CharacterCounter from './CharacterCounter';
 import TodayCard from './TodayCard';
 import NavigationBar from './NavigationBar';
 import { Row, Col, Container } from 'react-bootstrap';
@@ -11,14 +9,11 @@ function App() {
     <RecoilRoot>
       <div className="App">
         <NavigationBar />
-        <Container>
+        <Container className='my-4'>
           <Row>
             <Col>
-              <h1>Free-writing App</h1>
+              <TodayCard />
             </Col>
-          </Row>
-          <Row>
-            <TodayCard />
           </Row>
         </Container>
       </div>
