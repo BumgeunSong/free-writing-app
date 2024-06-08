@@ -4,7 +4,7 @@ import Duration from "./Duration";
 
 function TodayCard() {
     return (
-        <Card className="text-center" border="success">
+        <Card className="text-center" border="success" bg="success" text="white">
             <Card.Body>
                 <Card.Title>
                     <CurrentDate />
