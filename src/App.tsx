@@ -16,12 +16,8 @@ function App() {
               <TodayCard />
             </Col>
           </Row>
-          <Row>
-            <Col>
-              <Editor />
-            </Col>
-          </Row>
         </Container>
+        <Editor />
       </div>
     </RecoilRoot>
   );
