@@ -5,7 +5,7 @@ import Duration from "./Duration";
 function TodayCard() {
     const isTodayWritingDone = false
     return (
-        <Card className="text-center" border="success" bg="success" text="white">
+        <Card className="text-center" bg="light">
             <Card.Body>
                 <Card.Title>
                     <CurrentDate />
@@ -14,18 +14,18 @@ function TodayCard() {
                     isTodayWritingDone ? (
                         <>
                         <Card.Text>
-                            <Duration />
-                        </Card.Text>
-                        <Button variant="primary">시작하기</Button>
-                        </>
-                    ) : (
-                        <>
-                        <Card.Text>
                             🎉
                         </Card.Text>
                         <Card.Text>
                             완료!
                         </Card.Text>
+                        </>
+                    ) : (
+                        <>
+                        <Card.Text>
+                            <Duration />
+                        </Card.Text>
+                        <Button variant="primary">시작하기</Button>
                         </>
                     )
                 }
