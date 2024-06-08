@@ -10,14 +10,7 @@ function App() {
   return (
     <RecoilRoot>
       <div className="App">
-        <NavigationBar />
-        <Container className='my-4'>
-          <Row>
-            <Col>
-              <TodayCard />
-            </Col>
-          </Row>
-        </Container>
+        <NavigationBar />    
         <Outlet />
       </div>
     </RecoilRoot>

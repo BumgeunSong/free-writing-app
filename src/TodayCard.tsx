@@ -1,37 +1,44 @@
 import CurrentDate from "./CurrentDate";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Col, Container } from "react-bootstrap";
 import Duration from "./Duration";
+import { Row } from "react-bootstrap";
 
 function TodayCard() {
     const isTodayWritingDone = false
     return (
-        <Card className="text-center" bg="light">
-            <Card.Body>
-                <Card.Title>
-                    <CurrentDate />
-                </Card.Title>
-                {
-                    isTodayWritingDone ? (
-                        <>
-                        <Card.Text>
-                            🎉
-                        </Card.Text>
-                        <Card.Text>
-                            완료!
-                        </Card.Text>
-                        </>
-                    ) : (
-                        <>
-                        <Card.Text>
-                            <Duration />
-                        </Card.Text>
-                        <Button variant="primary">시작하기</Button>
-                        </>
-                    )
-                }
+        <Container className='my-4'>
+            <Row>
+                <Col>
+                    <Card className="text-center" bg="light">
+                        <Card.Body>
+                            <Card.Title>
+                                <CurrentDate />
+                            </Card.Title>
+                            {
+                                isTodayWritingDone ? (
+                                    <>
+                                        <Card.Text>
+                                            🎉
+                                        </Card.Text>
+                                        <Card.Text>
+                                            완료!
+                                        </Card.Text>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Card.Text>
+                                            <Duration />
+                                        </Card.Text>
+                                        <Button variant="primary">시작하기</Button>
+                                    </>
+                                )
+                            }
 
-            </Card.Body>
-        </Card>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     )
 }
 

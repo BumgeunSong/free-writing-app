@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Editor from "./Editor";
+import TodayCard from "./TodayCard";
 
 
 function Router() {
@@ -9,6 +10,10 @@ function Router() {
             path: "/",
             element: <App />,
             children: [
+                {
+                    path: "/",
+                    element: <TodayCard />
+                },
                 {
                     path: "write",
                     element: <Editor />
