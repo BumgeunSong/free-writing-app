@@ -2,7 +2,12 @@ import styled from "@emotion/styled"
 import { Button, Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-function Footer() {
+interface FooterProps {
+    timeTotal: string
+    timePast: string
+}
+
+function Footer({ timeTotal, timePast }: FooterProps) {
     return (
         <footer className='footer fixed-bottom bg-dark text-white'>
             <Container>
@@ -13,7 +18,7 @@ function Footer() {
                         </Link>
                     </Col>
                     <Col>
-                        Place sticky footer content here.
+                        <p>{timePast} : {timeTotal} </p>
                     </Col>
                     <Col>
                         <Button>출간하기</Button>

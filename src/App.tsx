@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <NavigationBar />
         <Outlet />
-        <Footer />
+        <Footer timePast='2:30' timeTotal='10:00'/>
       </div>
     </RecoilRoot>
   );
